@@ -1,9 +1,9 @@
 body {
-    background-color: #B4B2A8;
+    background-color: #8B0800;
   }
   
 .title {
-  color: white;
+  color: #E1AC06;
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
@@ -20,15 +20,20 @@ body {
 }
 
 .container {
-  background-color: #BA3D33;
+  background-color: #E1AC06;
   width: 50vw;
-  height: auto;
+  max-height: 300vh;
   margin: 0 auto;
-  color:white;
+  color:#8B0800;
   font-family: 'Roboto', sans-serif;
   border-radius: 5%;
   text-transform: capitalize;
   letter-spacing: 0.5px;
+  -webkit-transition: all 2s ease;  
+    -moz-transition: all 2s ease;  
+    -o-transition: all 2s ease;  
+    -ms-transition: all 2s ease;  
+    transition: all 10s ease;
 }
 
 #description {
@@ -147,13 +152,14 @@ ul {
     margin-top: 5%;
     margin-bottom: 5%;
     border-radius: 3%;
-    background-color: #052D72;
+    background-color: #8B0800;
     border: none;
     color: white;
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
     font-size: 125%;
 }
+
 
 
   
