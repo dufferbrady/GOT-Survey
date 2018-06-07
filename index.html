@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <h1 id="title" class="title titleTop">FreeCodeCamp</h1>
+    <h1 id="title" class="title titleBottom">Responsive Survery Form</h1>
+  </div>
+  <div class="container">
+    <p id="description">This will be a survey that is Game of Thrones related.</p>
+    <form id="survey-form">
+          <div>
+              <label id="name-label" for="firstName">Name:</label>
+              <input id="name" type="text" name="firstname" placeholder="Enter Your Name Here" required>
+          </div>
+          <div>
+              <label id="email-label" for="email">Email:</label>
+              <input id="email" type="email" name="email" placeholder="Enter Your Email Here" required>
+          </div>
+          <div>
+              <label id="number-label" for="age">Age:</label>
+              <input id="number" min="1" max="100" type="number" name="age" placeholder="Enter Your Age">
+          </div>
+          <div>
+              <label for="">Select</label>
+              <select id="dropdown"> 
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+              </select>
+          <div>
+          <div>Prefered Weapon of Choice:</div> 
+          <br>
+          <label for="weaponOne">Sword</label>
+          <input type="radio" name="weapons" id="weaponOne" value="sword">
+          <label for="weaponTwo">Axe</label>
+          <input type="radio" name="weapons" id="weaponTwo" value="axe">
+          <label for="weaponThree">Bow</label>
+          <input type="radio" name="weapons" id="weaponThree" value="bow">
+          <div>
+              <div>Choose all values that are most important to you</div>
+              <label for="choiceOne">Loyalty</label>
+              <input type="checkbox" id="choiceOne" name="choiceOne" value="Loyalty">
+              <label for="choiceTwo">Wealth</label>
+              <input type="checkbox" id="choiceTwo" name="choiceTwo" value="Wealth">
+              <label for="choiceThree">Honesty</label>
+              <input type="checkbox" id="choiceThree" name="choiceThree" value="Honesty">
+              <label for="choiceFour">Family</label>
+              <input type="checkbox" id="choiceFour" name="choiceFour" value="Family">
+              <label for="choiceFive">Strength</label>
+              <input type="checkbox" id="choiceFive" name="choiceFive" value="Strength">
+          </div>
+          <div>
+              <textarea name="textarea" rows="10" cols="25">Write something here</textarea>  
+          </div>
+         <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+    <script 
+        src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js">
+    </script>
+</body>
+</html>
