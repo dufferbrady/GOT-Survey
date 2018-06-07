@@ -1,0 +1,36 @@
+body {
+    background-color: #078F3F;
+  }
+  
+.title {
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.titleTop {
+  font-size: 350%;
+  letter-spacing: 3px;
+  margin-bottom: 0.5%;
+}
+
+.titleBottom {
+  font-size: 175%;
+  letter-spacing: 1.5px;
+}
+
+.container {
+  background-color: white;
+  width: 50vw;
+  height: 125vh;
+  margin: 0 auto;
+  color:#D9251B;
+}
+
+#description {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+  
