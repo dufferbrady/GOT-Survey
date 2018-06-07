@@ -9,13 +9,13 @@
 </head>
 <body>
     <div>
-        <h1 id="title" class="title titleTop">FreeCodeCamp</h1>
-        <h1 id="title" class="title titleBottom">Responsive Survery Form</h1>
+        <h1 id="title" class="title titleTop">Game of Thrones</h1>
+        <h1 id="title" class="title titleBottom">Survey Form</h1>
     </div>
     <div class="container">
-        <p id="description">This will be a survey that is Game of Thrones related.</p>
+        <p id="description">Fill out the form below to find out which house in <br>Game of Thrones you will fight for!</p>
         <form id="survey-form">
-            <div class="pageData">
+            <div class="pageRow">
                 <div class="labels">
                     <label id="name-label" for="firstName">Name:</label>
                 </div>
@@ -23,7 +23,7 @@
                     <input id="name" type="text" name="firstname" placeholder="Enter Your Name Here" required>
                 </div>
             </div>
-            <div class="pageData">
+            <div class="pageRow">
                 <div class="labels">
                     <label id="email-label" for="email">Email:</label>
                 </div>
@@ -31,7 +31,7 @@
                     <input id="email" type="email" name="email" placeholder="Enter Your Email Here" required>
                 </div>                
             </div>
-            <div class="pageData">
+            <div class="pageRow">
                 <div class="labels">
                     <label id="number-label" for="age">Age:</label>                    
                 </div>
@@ -39,45 +39,57 @@
                     <input id="number" min="1" max="100" type="number" name="age" placeholder="Enter Your Age">                              
                 </div>
             </div>
-            <div class="pageData">
+            <div class="pageRow">
                 <div class="labels">
-                    <label for="">Select</label>                   
+                    <label id="dropDown-label" for="dropDown">Who is the real enemy?</label>                   
                 </div>
                 <div class="pageDataRight">
-                    <select id="dropdown"> 
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
+                    <select id="dropDown"> 
+                        <option value="" disabled selected>Select Your Enemy</option>
+                        <option value="1">The White Walkers</option>
+                        <option value="2">The Lannisters</option>
+                        <option value="3">The Targaryens</option>
+                        <option value="4">The Wildlings</option>
                     </select>
                 </div>
             </div>
-            <div class="pageData">
+            <div class="pageRow">
                 <div class="labels">
-                    <label for="weaponChoice">Prefered Weapon of Choice:</label>
+                    <label id="weapons-label" for="weaponChoice">Prefered Weapon of Choice:</label>
                 </div>
                 <div class="pageDataRight">
                     <ul style="list-style: none;">
-                        <li><label for="weaponOne">Sword<input type="radio" name="weapons" id="weaponOne" value="sword" class="weapons"></label></li>
-                        <li><label for="weaponTwo">Axe<input type="radio" name="weapons" id="weaponTwo" value="axe" class="weapons"></label></li>
-                        <li><label for="weaponThree">Bow<input type="radio" name="weapons" id="weaponThree" value="bow" class="weapons"></label></li>
+                        <li class="list-item"><input type="radio" name="weapons" id="weaponOne" value="sword" class="weapons"><label for="weaponOne">Sword</label></li>
+                        <li class="list-item"><input type="radio" name="weapons" id="weaponTwo" value="axe" class="weapons"><label for="weaponTwo">Axe</label></li>
+                        <li class="list-item"><input type="radio" name="weapons" id="weaponThree" value="bow" class="weapons"><label for="weaponThree">Bow</label></li>
                     </ul>
                 </div>
             </div> 
-            <div class="pageData">
+            <div class="pageRow">
                 <div class="labels">
-                    <label for="Values">Choose all values that are most important to you</label>
+                    <label id="values-label" for="Values">Choose all values that are most important to you:</label>
                 </div>
-                <ul style="list-style: none;">
-                    <li><label for="choiceOne">Loyalty<input type="checkbox" id="choiceOne" name="choiceOne" value="Loyalty"></label></li>
-                    <li><label for="choiceTwo">Wealth<input type="checkbox" id="choiceTwo" name="choiceTwo" value="Wealth"></label></li>
-                    <li><label for="choiceThree">Honesty<input type="checkbox" id="choiceThree" name="choiceThree" value="Honesty"></label></li>
-                    <li><label for="choiceFour">Family<input type="checkbox" id="choiceFour" name="choiceFour" value="Family"></label></li>
-                    <li><label for="choiceFive">Strength<input type="checkbox" id="choiceFive" name="choiceFive" value="Strength"></label></li>
-                </ul>
+                <div class="pageDataRight">
+                    <ul style="list-style: none;">
+                        <li class="list-item"><input type="checkbox" id="choiceOne" name="choiceOne" value="Loyalty" class="values"><label class="list-label" for="choiceOne">Loyalty</label></li>
+                        <li class="list-item"><input type="checkbox" id="choiceTwo" name="choiceTwo" value="Wealth" class="values"><label class="list-label" for="choiceTwo">Wealth</label></li>
+                        <li class="list-item"><input type="checkbox" id="choiceThree" name="choiceThree" value="Honesty" class="values"><label class="list-label" for="choiceThree">Honesty</label></li>
+                        <li class="list-item"><input type="checkbox" id="choiceFour" name="choiceFour" value="Family" class="values"><label class="list-label" for="choiceFour">Family</label></li>
+                        <li class="list-item"><input type="checkbox" id="choiceFive" name="choiceFive" value="Strength" class="values"><label class="list-label" for="choiceFive">Strength</label></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-              <textarea name="textarea" rows="10" cols="25" placeholder="Write something here"></textarea>  
+            <div class="pageRow">
+                <div class="labels">
+                    <label for="commentSection" id="text-label">Tells us how you would improve our forces</label>
+                </div>
+                <div class="pageDataRight">
+                    <textarea name="textarea" rows="3" cols="25" placeholder="Write something here"></textarea>  
+                </div>
             </div>
-         <button type="submit" id="submit">Submit</button>
+            <div class="pageRow">
+                <button type="submit" id="submit">Submit</button>
+            </div>
         </form>
     </div>
 
